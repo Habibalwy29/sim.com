@@ -1,0 +1,110 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --display-1-uppercase-semi-bold-font-family: "Inter", Helvetica;
+  --display-1-uppercase-semi-bold-font-size: 12px;
+  --display-1-uppercase-semi-bold-font-style: normal;
+  --display-1-uppercase-semi-bold-font-weight: 600;
+  --display-1-uppercase-semi-bold-letter-spacing: 0.96px;
+  --display-1-uppercase-semi-bold-line-height: 18px;
+  --neutral-colors100: rgba(255, 255, 255, 1);
+  --neutral-colors300: rgba(241, 243, 247, 1);
+  --neutral-colors400: rgba(225, 228, 237, 1);
+  --neutral-colors500: rgba(180, 185, 201, 1);
+  --neutral-colors600: rgba(109, 117, 143, 1);
+  --neutral-shadow-02: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+  --neutral-shadow-03: 0px 2px 6px 0px rgba(25, 33, 61, 0.14);
+  --primary-paletteblue: rgba(35, 136, 255, 1);
+  --secondary-colorsblue-300: rgba(141, 193, 255, 1);
+  --style-guide-icons-sidebar: 0px 1px 3px 0px rgba(35, 136, 255, 0.2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
